@@ -3,7 +3,7 @@
 function findWaldo(arr, found) {
 	arr.forEach( function(entry, i) {
 		if (entry === "Waldo") {
-	    actionWhenFound(i);   // execute callback
+	    found(i);   // execute callback
 	  }
 	});
 }
